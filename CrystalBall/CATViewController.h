@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class CATCrystalBall;
+
 @interface CATViewController : UIViewController
-@property (strong, nonatomic) NSArray *predictions;
+
+@property (strong, nonatomic) CATCrystalBall *crystalBall;
+
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+
 - (IBAction)buttonPressed;
 
 @end

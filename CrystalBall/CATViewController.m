@@ -7,6 +7,8 @@
 //
 
 #import "CATViewController.h"
+#import "CATCrystalBall.h"
+
 
 @interface CATViewController ()
 
@@ -17,19 +19,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.crystalBall = [[CATCrystalBall alloc ]init];
     
-    self.predictions = [[NSArray alloc] initWithObjects:@"It is certain",
-                        @"It is decidedly so",
-                        @"All the signs say YES",
-                        @"The stars are not aligned",
-                        @"My relpy is no",
-                        @"It is doubtful",
-                        @"Better not tell you now",
-                        @"Concretrate and ask again",
-                        @"Unable to answer now",
-                        nil];
 	
-    
 }
 
 
@@ -41,9 +33,7 @@
 
 - (IBAction)buttonPressed {
     
-    int random = arc4random_uniform(self.predictions.count);
-    
-    self.predictionLabel.text = [self.predictions objectAtIndex:random];
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
     
 }
 @end
