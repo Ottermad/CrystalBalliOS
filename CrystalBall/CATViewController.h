@@ -12,10 +12,15 @@
 
 @interface CATViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
 @property (strong, nonatomic) CATCrystalBall *crystalBall;
 
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 
-- (IBAction)buttonPressed;
+- (void) makePrediction;
+
+- (void) emptyPrediction;
+
 
 @end

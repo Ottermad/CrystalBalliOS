@@ -16,50 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CbE-Ij-TCS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="CbE-Ij-TCS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The stars are not aligned" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="em6-pa-14z">
-                                <rect key="frame" x="20" y="205" width="280" height="100"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The stars are not aligned" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="em6-pa-14z">
+                                <rect key="frame" x="60" y="243" width="200" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="OEc-MC-31C"/>
-                                    <constraint firstAttribute="width" constant="280" id="jTN-B4-2hn"/>
+                                    <constraint firstAttribute="height" constant="81" id="7aj-mt-OnP"/>
+                                    <constraint firstAttribute="width" constant="200" id="Phb-YL-ScE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEZ-II-oNk">
-                                <rect key="frame" x="29" y="501" width="261" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="261" id="XJD-To-eWE"/>
-                                    <constraint firstAttribute="height" constant="47" id="xL8-xn-dRC"/>
-                                </constraints>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="button-off">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="button-on"/>
-                                <connections>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yy3-ib-LzY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="CbE-Ij-TCS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="0b6-Ij-V8I"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xEZ-II-oNk" secondAttribute="bottom" constant="20" id="4UN-S9-kSN"/>
                             <constraint firstAttribute="trailing" secondItem="CbE-Ij-TCS" secondAttribute="trailing" id="DLe-UE-gyd"/>
+                            <constraint firstItem="em6-pa-14z" firstAttribute="centerX" secondItem="CbE-Ij-TCS" secondAttribute="centerX" id="Tbb-EP-mvn"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CbE-Ij-TCS" secondAttribute="bottom" id="XlF-kD-X4A"/>
-                            <constraint firstItem="em6-pa-14z" firstAttribute="centerY" secondItem="CbE-Ij-TCS" secondAttribute="centerY" constant="-29" id="Zlt-Z8-EZ0"/>
-                            <constraint firstItem="em6-pa-14z" firstAttribute="centerX" secondItem="CbE-Ij-TCS" secondAttribute="centerX" id="iC0-st-taN"/>
-                            <constraint firstAttribute="centerX" secondItem="xEZ-II-oNk" secondAttribute="centerX" id="iD2-H9-XDu"/>
+                            <constraint firstItem="em6-pa-14z" firstAttribute="centerY" secondItem="CbE-Ij-TCS" secondAttribute="centerY" constant="-0.5" id="ZvH-xe-hoE"/>
                             <constraint firstItem="CbE-Ij-TCS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="lrJ-ES-r8u"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="CbE-Ij-TCS" id="vIn-GU-1Fu"/>
                         <outlet property="predictionLabel" destination="em6-pa-14z" id="MdU-9X-Y2e"/>
                     </connections>
                 </viewController>
@@ -68,9 +51,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="320" height="568"/>
-        <image name="button-off" width="261" height="49"/>
-        <image name="button-on" width="261" height="47"/>
+        <image name="CB00001" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

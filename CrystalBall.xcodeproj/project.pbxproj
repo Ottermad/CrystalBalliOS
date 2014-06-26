@@ -22,6 +22,8 @@
 		846BDF68195B3FD100F39E18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846BDF66195B3FD100F39E18 /* InfoPlist.strings */; };
 		846BDF6A195B3FD100F39E18 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BDF69195B3FD100F39E18 /* CrystalBallTests.m */; };
 		846BDF75195C6F2300F39E18 /* CATCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BDF74195C6F2300F39E18 /* CATCrystalBall.m */; };
+		846BDF77195CBC4F00F39E18 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 846BDF76195CBC4F00F39E18 /* crystal_ball.mp3 */; };
+		846BDF79195CBC9B00F39E18 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846BDF78195CBC9B00F39E18 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		846BDF69195B3FD100F39E18 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
 		846BDF73195C6F2300F39E18 /* CATCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATCrystalBall.h; sourceTree = "<group>"; };
 		846BDF74195C6F2300F39E18 /* CATCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATCrystalBall.m; sourceTree = "<group>"; };
+		846BDF76195CBC4F00F39E18 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		846BDF78195CBC9B00F39E18 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846BDF79195CBC9B00F39E18 /* AudioToolbox.framework in Frameworks */,
 				846BDF41195B3FD000F39E18 /* CoreGraphics.framework in Frameworks */,
 				846BDF43195B3FD000F39E18 /* UIKit.framework in Frameworks */,
 				846BDF3F195B3FD000F39E18 /* Foundation.framework in Frameworks */,
@@ -104,6 +109,7 @@
 		846BDF3D195B3FD000F39E18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				846BDF78195CBC9B00F39E18 /* AudioToolbox.framework */,
 				846BDF3E195B3FD000F39E18 /* Foundation.framework */,
 				846BDF40195B3FD000F39E18 /* CoreGraphics.framework */,
 				846BDF42195B3FD000F39E18 /* UIKit.framework */,
@@ -115,6 +121,7 @@
 		846BDF44195B3FD000F39E18 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
+				846BDF76195CBC4F00F39E18 /* crystal_ball.mp3 */,
 				846BDF50195B3FD000F39E18 /* Main.storyboard */,
 				846BDF53195B3FD000F39E18 /* CATViewController.h */,
 				846BDF54195B3FD000F39E18 /* CATViewController.m */,
@@ -236,6 +243,7 @@
 			files = (
 				846BDF57195B3FD000F39E18 /* Images.xcassets in Resources */,
 				846BDF49195B3FD000F39E18 /* InfoPlist.strings in Resources */,
+				846BDF77195CBC4F00F39E18 /* crystal_ball.mp3 in Resources */,
 				846BDF52195B3FD000F39E18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
