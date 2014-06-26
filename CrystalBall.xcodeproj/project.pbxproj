@@ -112,8 +112,6 @@
 		846BDF44195B3FD000F39E18 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				846BDF4D195B3FD000F39E18 /* CATAppDelegate.h */,
-				846BDF4E195B3FD000F39E18 /* CATAppDelegate.m */,
 				846BDF50195B3FD000F39E18 /* Main.storyboard */,
 				846BDF53195B3FD000F39E18 /* CATViewController.h */,
 				846BDF54195B3FD000F39E18 /* CATViewController.m */,
@@ -126,6 +124,8 @@
 		846BDF45195B3FD000F39E18 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				846BDF4D195B3FD000F39E18 /* CATAppDelegate.h */,
+				846BDF4E195B3FD000F39E18 /* CATAppDelegate.m */,
 				846BDF46195B3FD000F39E18 /* CrystalBall-Info.plist */,
 				846BDF47195B3FD000F39E18 /* InfoPlist.strings */,
 				846BDF4A195B3FD000F39E18 /* main.m */,

@@ -17,8 +17,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.predictions = [[NSArray alloc] initWithObjects:@"It is certain",
+                        @"It is decidedly so",
+                        @"All the signs say YES",
+                        @"The stars are not aligned",
+                        @"My relpy is no",
+                        @"It is doubtful",
+                        @"Better not tell you now",
+                        @"Concretrate and ask again",
+                        @"Unable to answer now",
+                        nil];
+	
+    
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,4 +39,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonPressed {
+    
+    int random = arc4random_uniform(self.predictions.count);
+    
+    self.predictionLabel.text = [self.predictions objectAtIndex:random];
+    
+}
 @end
